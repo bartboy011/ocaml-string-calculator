@@ -18,6 +18,5 @@ let extract_delimeter str =
   if has_header str then Str.matched_group 1 str else "[,\n]"
 
 let calc str =
-  (* Produces a regex along the lines of /[,\n]/ *)
   let regex = Str.regexp (Printf.sprintf "%s" (extract_delimeter str)) in
   sum_str_list (Str.split regex (Str.global_replace header_regex "" str))
