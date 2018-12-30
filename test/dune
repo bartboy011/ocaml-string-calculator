@@ -1,10 +1,10 @@
 (executable
-    (name string_calculator)
-    (libraries alcotest)
+    (name teststringcalculator)
+    (libraries alcotest stringcalculator)
 )
 
 (alias
   (name runtest)
-  (deps string_calculator.exe)
+  (deps teststringcalculator.exe)
   (action (run %{deps} -q --color=always))
 )

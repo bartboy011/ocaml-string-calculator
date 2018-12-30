@@ -1,0 +1,5 @@
+(library
+ (name        stringcalculator)
+ (public_name stringcalculator)
+ (libraries str)
+)
