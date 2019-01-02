@@ -10,6 +10,8 @@ opam switch create . 4.06.1
 opam install utop merlin alcotest ocp-indent dune
 ```
 
+#### NOTE: You may need to run the command `eval $(opam config env)`
+
 ## Tests
 ```bash
 dune runtest
